@@ -9,6 +9,16 @@ import java.util.*;
 
 
 public class Main {
+
+    static private Integer sumOfDigitsOfNumber(Integer a) {
+        Integer sum = 0;
+        while (a != 0) {
+            sum += a % 10;
+            a /= 10;
+        }
+        return sum;
+    }
+
     static void printToFile(String fileName, ArrayList arrayList) {
         try (PrintWriter pw = new PrintWriter(fileName)) {
             while (!arrayList.isEmpty()) {
@@ -34,14 +44,14 @@ public class Main {
         Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
-                return Integer.compare(o1, o2);
+                return Integer.compare(sumOfDigitsOfNumber(o2), sumOfDigitsOfNumber(o1));
             }
         });
         printToFile("result1.txt", (ArrayList) list.clone());
         Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
-                return Integer.compare(o2, o1);
+                return Integer.compare(sumOfDigitsOfNumber(o1), sumOfDigitsOfNumber(o2));
             }
         });
         printToFile("result2.txt", list);

@@ -32,6 +32,7 @@ public class Group {
     public void addStudentToGroup(Student student) {
         Student[] newStudents = Arrays.copyOf(students, students.length + 1);
         newStudents[newStudents.length - 1] = student;
+        students = newStudents;
     }
 
     @Override

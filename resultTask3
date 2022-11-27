@@ -5,7 +5,7 @@
    <int>171</int>
   </void>
   <void property="students">
-   <array class="task3.Student" length="4">
+   <array class="task3.Student" length="5">
     <void index="0">
      <object class="task3.Student">
       <void property="age">
@@ -55,6 +55,19 @@
       </void>
       <void property="secondName">
        <string>Abib</string>
+      </void>
+     </object>
+    </void>
+    <void index="4">
+     <object class="task3.Student">
+      <void property="age">
+       <int>22</int>
+      </void>
+      <void property="firstName">
+       <string>Kto</string>
+      </void>
+      <void property="secondName">
+       <string>Ya</string>
       </void>
      </object>
     </void>

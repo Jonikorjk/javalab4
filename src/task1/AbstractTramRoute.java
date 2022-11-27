@@ -222,7 +222,17 @@ public abstract class AbstractTramRoute {
      * <p>test()</p>
      * Function that tests functional of classes
      */
-    public static void test(Station[] stations) {
+    public static void test() {
+
+        Station[] stations = {
+                new Station("Porkovsk", 15),
+                new Station("Dobropolie", 2),
+                new Station("Kramatorsk", 37),
+                new Station("Slavyansk", 33),
+                new Station("Izum", 15),
+                new Station("Chygyev", 2),
+                new Station("Kharkov", 74)
+        };
 
         TramRouteWithArray tramRouteWithArray = new TramRouteWithArray(127, 15, stations);
         tramRouteWithArray.addStation(new Station("Kiev", 73));
@@ -264,6 +274,9 @@ public abstract class AbstractTramRoute {
         System.out.println("With the longest name: " + Arrays.deepToString(tramRouteSortedSet.getStationWithTheLargestName()));
         System.out.println("Sort by passengers: " + Arrays.deepToString(tramRouteSortedSet.passengersSort()));
         System.out.println("Sort by stations: " + Arrays.deepToString(tramRouteSortedSet.nameOfStationSort()));
+
+        new TramRouteWithTextFile(203, 3, stations.clone()).test("source.txt", "stationSort.txt", "passengers.txt");
+        new TramRouteWithDataFile(203, 5, stations.clone()).test("source1.dat", "stationSort1.dat", "passengers1.dat");
     }
 }
 

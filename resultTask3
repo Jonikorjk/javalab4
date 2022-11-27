@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.4.1" class="java.beans.XMLDecoder">
+ <object class="task3.Group">
+  <void property="numberOfGroup">
+   <int>171</int>
+  </void>
+  <void property="students">
+   <array class="task3.Student" length="4">
+    <void index="0">
+     <object class="task3.Student">
+      <void property="age">
+       <int>31</int>
+      </void>
+      <void property="firstName">
+       <string>Andrii</string>
+      </void>
+      <void property="secondName">
+       <string>Mayorov</string>
+      </void>
+     </object>
+    </void>
+    <void index="1">
+     <object class="task3.Student">
+      <void property="age">
+       <int>15</int>
+      </void>
+      <void property="firstName">
+       <string>Kirill</string>
+      </void>
+      <void property="secondName">
+       <string>Koval</string>
+      </void>
+     </object>
+    </void>
+    <void index="2">
+     <object class="task3.Student">
+      <void property="age">
+       <int>18</int>
+      </void>
+      <void property="firstName">
+       <string>Anton</string>
+      </void>
+      <void property="secondName">
+       <string>Rydnik</string>
+      </void>
+     </object>
+    </void>
+    <void index="3">
+     <object class="task3.Student">
+      <void property="age">
+       <int>15</int>
+      </void>
+      <void property="firstName">
+       <string>Habibi</string>
+      </void>
+      <void property="secondName">
+       <string>Abib</string>
+      </void>
+     </object>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>

@@ -276,7 +276,7 @@ public abstract class AbstractTramRoute {
         System.out.println("Sort by stations: " + Arrays.deepToString(tramRouteSortedSet.nameOfStationSort()));
 
         new TramRouteWithTextFile(203, 3, stations.clone()).test("source.txt", "stationSort.txt", "passengers.txt");
-        new TramRouteWithDataFile(203, 5, stations.clone()).test("source1.dat", "stationSort1.dat", "passengers1.dat");
+        new TramRouteWithDataFile(204, 5, stations.clone()).test("source1.dat", "stationSort1.dat", "passengers1.dat");
     }
 }
 

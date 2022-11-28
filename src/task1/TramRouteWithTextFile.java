@@ -34,6 +34,7 @@ public class TramRouteWithTextFile extends TramRouteWithFile {
                 for (var st : getTramRoute()) {
                     out.print(st.getNameOfStation() + " " + st.getPassengers() + " ");
                 }
+                setTramRouteWithArray(new Station[0]);
             }
             else {
                 for (var st : stations) {

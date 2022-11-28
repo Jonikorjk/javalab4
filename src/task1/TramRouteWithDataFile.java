@@ -42,6 +42,7 @@ public class TramRouteWithDataFile extends TramRouteWithFile {
                     out.writeUTF(station.getNameOfStation() + " ");
                     out.writeInt(station.getPassengers());
                 }
+                setTramRouteWithArray(new Station[0]);
             }
         }
     }
